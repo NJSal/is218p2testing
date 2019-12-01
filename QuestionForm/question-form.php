@@ -1,3 +1,10 @@
+<?php
+
+$userId = filter_input(INPUT_GET,'id');//email do the same
+
+?>
+
+
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -35,6 +42,9 @@
                 <button class="btn btn-primary btn-block">
                     <input type = "submit" value = "Submit Responses" class = "btn btn-primary bt-block">
                 </button>
+
+                <input type="hidden" name="userId" value="<?php echo $userId; ?>">
+
             </form>
         </section>
     </section>
@@ -45,3 +55,5 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

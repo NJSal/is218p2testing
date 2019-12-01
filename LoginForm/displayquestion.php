@@ -57,7 +57,7 @@ $statement->execute();
 $values= $statement->fetchAll();
 $statement->closeCursor();
 */
-//header("Location: ../QuestionForm/questionform.html?ownerid=$owneridvalue");
+//header("Location: ../QuestionForm/question-form.php?ownerid=$owneridvalue");
 
 ?>
 
@@ -103,11 +103,11 @@ $questions = get_questions($userId);
 
         <!--<button>Add Question</button></a>-->
     <button class="btn btn-default btn-block">
-        <a href = "../QuestionForm/questionform.html?id=<?php echo $userId; ?>">Add Question</a>
+        <a href = "../QuestionForm/question-form.php?id=<?php echo $userId; ?>">Add Question</a>
     </button>
 
 <?php
-//header("Location: ../QuestionForm/questionform.html?id=$userId");
+//header("Location: ../QuestionForm/question-form.php?id=$userId");
 ?>
 
 

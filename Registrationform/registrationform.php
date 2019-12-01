@@ -9,8 +9,8 @@ require('../ModelPDO/pdomethods.php');
 
 //include("registrationform.html");
 
-$firstname = filter_input(INPUT_POST, 'firstname');
-$lastname = filter_input(INPUT_POST, 'lastname');
+$firstname = filter_input(INPUT_POST, 'fname');
+$lastname = filter_input(INPUT_POST, 'lname');
 $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');

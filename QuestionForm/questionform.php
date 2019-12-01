@@ -9,7 +9,7 @@ require('../ModelPDO/pdomethods.php');
 $name = filter_input(INPUT_POST, 'name');
 $about = filter_input(INPUT_POST, 'about');
 $skills = filter_input(INPUT_POST, 'skills');
-$userId = filter_input(INPUT_GET,'userId');
+$userId = filter_input(INPUT_POST,'userId');
 
 
 
@@ -101,7 +101,7 @@ $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 */
 
-$userId = filter_input(INPUT_GET,'userId');
+//$userId = filter_input(INPUT_GET,'userId');
 header("Location: ../LoginForm/displayquestion.php?id=$userId");
 
 ?>
